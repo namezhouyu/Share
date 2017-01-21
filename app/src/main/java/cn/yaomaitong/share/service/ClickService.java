@@ -50,6 +50,9 @@ public class ClickService extends AccessibilityService {
       if (targetNode == null) {
         targetNode = findNodeInfosById(nodeInfo, "com.tencent.mm:id/g_");
       }
+      if (targetNode == null) {
+        targetNode = findNodeInfosById(nodeInfo, "com.tencent.mm:id/eg");
+      }
       if (null != targetNode && targetNode.isClickable()) {
         targetNode.performAction(AccessibilityNodeInfo.ACTION_CLICK);
       }
