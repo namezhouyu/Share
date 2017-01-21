@@ -4,7 +4,7 @@ android {
   compileSdkVersion 25
   buildToolsVersion "25.0.0"
   defaultConfig {
-    applicationId "cn.yaomaitong.app"
+    applicationId applicationId
     minSdkVersion 15
     targetSdkVersion 25
     versionCode 1
@@ -27,10 +27,10 @@ android {
   signingConfigs {
     debug {
       try {
-        storeFile file("../sign/release.keystore")
-        storePassword "ymt123456"
-        keyAlias "YMT"
-        keyPassword "Ymt123456"
+        storeFile "../sign/release.keystore"
+        storePassword storePassword
+        keyAlias keyAlias
+        keyPassword keyPassword
       } catch (ex) {
         throw new InvalidUserDataException("Have to define KEYSTORE_PWD and KEY_PWD.")
       }
