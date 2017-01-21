@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <!-- base application colors-->
+  <color name="colorPrimary">#6775D1</color>
+  <color name="colorPrimaryDark">#6775D1</color>
+  <color name="colorAccent">#6775D1</color>
+
+  <!-- basic colors -->
+  <!--警告色-->
+  <color name="red">#FF4949</color>
+
+  <!--反白色、背景色、tablebar背景色-->
+  <color name="white">#FFFFFF</color>
+  <color name="white_dark">#F0F0F0</color>
+  <color name="white_light">#FAFAFA</color>
+
+  <!--toolbar、文字辅色3/主题色、辅助色-->
+  <color name="violet">#6775D1</color>
+  <color name="violet_light">#B3BAE8</color>
+  <color name="violet_dark">#394482</color>
+  <color name="violet_m_light">#879EE1</color>
+
+  <!--按钮色、提示、辅助色-->
+  <color name="yellow">#FFB554</color>
+  <color name="yellow_dark">#FF6313</color>
+  <color name="yellow_light">#FFF0C8</color>
+  <!--认证颜色-->
+  <color name="brown">#8a3600</color>
+  <color name="brown_light">#ffcf48</color>
+
+  <!--文字主色、辅助色、线色-->
+  <color name="grey_dark">#787878</color>
+  <color name="grey">#B4B4B4</color>
+  <color name="grey_light">#C8C8C8</color>
+  <color name="grey_m_light">#DCDCDC</color>
+
+  <!--文字辅色-->
+  <color name="blue_light">#6876DE</color>
+  <color name="blue_dark">#788c9d</color>
+  <color name="purple_dark">#828Fb1</color>
+
+  <color name="black">#323232</color>
+
+  <color name="pop">#80000000</color>
+
+
+  <color name="yellow_m_light">#FFCF48</color>
+  <color name="blue">#48BFEA</color>
+  <color name="green">#9FD661</color>
+  <color name="young_dark">#4DD987</color>
+  <color name="young">#40D0AE</color>
+
+  <color name="color1">#6775D1</color>
+  <color name="color2">#B3BAE8</color>
+  <color name="color3">#394482</color>
+  <color name="color4">#828FB1</color>
+
+  <color name="transparent">#00ffffff</color>
+  <color name="link">#27b0f1</color>
+
+
+</resources>
