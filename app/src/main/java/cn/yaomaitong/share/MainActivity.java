@@ -59,8 +59,8 @@ public class MainActivity extends AppCompatActivity {
     setContentView(R.layout.activity_main);
     YmtApplication.getBus().register(this);
     newsApi = RetrofitClient.get(this).create(NewsApi.class);
-    initScreenSetting();//锁屏幕唤起
-    registerMessageReceiver();//jpush
+    //initScreenSetting();//锁屏幕唤起
+    //registerMessageReceiver();//jpush
     initView();
     netRequest();
   }
@@ -145,9 +145,9 @@ public class MainActivity extends AppCompatActivity {
 
   @Override protected void onResume() {
     super.onResume();
-    mWakelock.acquire();//点亮
-    kl.disableKeyguard();  //解锁
     YmtApplication.get().setAutoFlag(true);
+    if (null != mWakelock) mWakelock.acquire();//点亮
+    if (null != kl) kl.disableKeyguard();  //解锁
   }
 
   @Override public boolean onCreateOptionsMenu(Menu menu) {
@@ -226,9 +226,9 @@ public class MainActivity extends AppCompatActivity {
   @Override protected void onDestroy() {
     YmtApplication.getBus().unregister(this);
     super.onDestroy();
-    mWakelock.release();
-    kl.reenableKeyguard();
     YmtApplication.get().setAutoFlag(false);
+    if (null != mWakelock) mWakelock.release();
+    if (null != kl) kl.reenableKeyguard();
   }
 
   //---------JPUSH-----------

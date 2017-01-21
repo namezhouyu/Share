@@ -70,7 +70,7 @@ public class YmtApplication extends Application {
   public void setAutoFlag(boolean flag) {
     SharedPreferences.Editor editor = sharedPreferences.edit();
     editor.putBoolean("auto", flag);
-    editor.apply();
+    editor.commit();
   }
 
   public boolean getAutoFlag() {
